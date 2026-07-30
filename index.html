@@ -4,9 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter text</title>
+    <link rel="stylesheet" href="style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <form action="">
+      <div class="container">
+        <h1>Tell me about your thougts <span>&#128526;</span></h1>
+        <div class="text-container">
+          <textarea name="thougts" id="thougts" cols="50" rows="10"></textarea>
+          <div id="total-char">0</div>
+        </div>
+
+        <button id="enterButton">Enter</button>
+
+        <div class="reply-container">
+          <h2>Here is what you told me</h2>
+        </div>
+      </div>
+    </form>
+  </body>
 </html>

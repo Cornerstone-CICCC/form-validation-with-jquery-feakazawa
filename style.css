@@ -1,0 +1,35 @@
+span {
+  font-size: 50px;
+}
+
+textarea {
+  font-size: 1rem;
+  padding: 20px;
+}
+
+button {
+  height: 3rem;
+  width: 7rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #1b4332;
+  color: white;
+  border: 2px solid #1b4332;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container div {
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+.reply-container {
+  background-color: yellow;
+}
