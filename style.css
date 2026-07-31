@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+span {
+  font-size: 50px;
+}
+
+textarea {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+button {
+  height: 3rem;
+  width: 7rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #1458bc;
+  color: white;
+  border: 2px solid #1458bc;
+  border-radius: 10px;
+}
+
+button:hover,
+button:focus {
+  background-color: palevioletred;
+  border-color: palevioletred;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container div {
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+.font-cursive {
+  font-family: "Edu NSW ACT Cursive";
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.message-container {
+  display: none;
+  border: 10px solid;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 0 auto 30px;
+  max-width: 50vw;
+}
+
+.error {
+  border-color: #ff0034;
+  color: #ff0034;
+}
+
+.reply-container {
+  border-color: #40916c;
+  color: #40916c;
+}
+
+.text-color {
+  color: black;
+}
