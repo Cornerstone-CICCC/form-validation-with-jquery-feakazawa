@@ -3,8 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter text</title>
+    <title>Tell me something</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="app.js" defer></script>
@@ -13,16 +20,32 @@
   <body>
     <form action="">
       <div class="container">
-        <h1>Tell me about your thougts <span>&#128526;</span></h1>
+        <h1>Tell me something <span>&#128526;</span></h1>
+
+        <div id="errorMessage" class="message-container error invisible">
+          <p>
+            Oh nooooo!!!! You told me a looot!!
+            <span>&#128557;</span>
+          </p>
+          <p>(or you told me nothing)</p>
+          <p>The maximum of characteres is 140!</p>
+        </div>
+
         <div class="text-container">
-          <textarea name="thougts" id="thougts" cols="50" rows="10"></textarea>
+          <textarea
+            class="font-cursive"
+            name="thougts"
+            id="thougts"
+            cols="40"
+            rows="5"
+          ></textarea>
           <div id="total-char">0</div>
         </div>
 
-        <button id="enterButton">Enter</button>
+        <button type="button" id="enterButton">Enter</button>
 
-        <div class="reply-container">
-          <h2>Here is what you told me</h2>
+        <div id="okMessage" class="message-container reply-container invisible">
+          <p>Here is what you've told me: <span>&#128519;</span></p>
         </div>
       </div>
     </form>
